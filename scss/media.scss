@@ -1,12 +1,42 @@
-@media only screen and (max-width: 1200px){
-
+@media only screen and (max-width: 1300px){
+	.container{
+		padding: 0 15px;
+	}
+	main section.one header .logo a{
+		font-size: 24px;
+	}
+	main section.one header .phone a span{
+		font-size: 24px;
+	}
+	main section.one header nav ul li a{
+		font-weight: 400;
+	}
+	main section.one header nav ul li{
+		padding: 0 10px;
+	}
+	main section.one header .phone a img {
+	    margin-bottom: -2px;
+	    margin-right: 8px;
+	    width: 22px;
+	    height: 22px;
+	}
 }
 @media only screen and (max-width: 992px){
-
+	main section.one header nav.desctop-menu{
+		display: none;
+	}
+	.navBurger{
+		display: block;
+	}
 }
 @media only screen and (max-width: 768px){
-	
+	.overlayMenu{
+		right: 15vw; 
+		top: 24vw;
+	}
 }
 @media only screen and (max-width: 480px){
-	
+	main section.one header .phone{
+		display: none;
+	}
 }

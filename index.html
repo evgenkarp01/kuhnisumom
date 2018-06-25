@@ -26,19 +26,35 @@
                 <header class="default">
                    <div class="container flex-wrap">
                         <div class="logo"><a href="/">Кухни с умом</a></div>
-                        <nav>
-                            <ul>
-                                <li class="active"><a href="#start">Главная</a></li>
-                                <li><a href="#one">Услуги</a></li>
-                                <li><a href="#two">Заказать</a></li>
-                                <li><a href="#three">Акции</a></li>
-                                <li><a href="#four">Почему мы</a></li>
-                                <li><a href="#five">Отзывы</a></li>
-                                <li><a href="#six">Контакты</a></li>
-                            </ul>
-                        </nav>
+                        
+                            <nav class="desctop-menu">
+                                <ul>
+                                    <li class="active"><a href="#start">Главная</a></li>
+                                    <li><a href="#one">Услуги</a></li>
+                                    <li><a href="#two">Заказать</a></li>
+                                    <li><a href="#three">Акции</a></li>
+                                    <li><a href="#four">Почему мы</a></li>
+                                    <li><a href="#five">Отзывы</a></li>
+                                    <li><a href="#six">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        
                         <div class="phone"><a href="tel:8(952)586-10-04"><img src="img/phone-call-w.png" alt=""><span>8(952)586-10-04</span></a></div>
+                        <div class="navBurger" role="navigation" id="navToggle"></div>
                     </div>
+                    <div class="overlay">
+                            <nav class="overlayMenu">
+                                <ul role="menu">
+                                    <li><a href="#start">Главная</a></li>
+                                    <li><a role="menuitem" href="#one">Услуги</a></li>
+                                    <li><a role="menuitem" href="#two">Заказать</a></li>
+                                    <li><a role="menuitem" href="#three">Акции</a></li>
+                                    <li><a role="menuitem" href="#four">Почему мы</a></li>
+                                    <li><a role="menuitem" href="#five">Отзывы</a></li>
+                                    <li><a role="menuitem" href="#six">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                 </header>
             </div>
             <div class="utp">
@@ -277,8 +293,6 @@
             </div>
         </section>
         <section id="seven" class="seven">
-           
-            
                 <div class="workers">
                     <div class="ttl-head">
                         <h2><strong>Кто делает </strong>вашу кухню</h2>
@@ -325,8 +339,72 @@
                        </div>
                     </div>
                 </div>
-            
+                <div class="spec-workers">
+                    <div class="title-spec">У вас есть вопросы к дизайнеру, производственникам или монтажникам?</div>
+                    <div class="phone-spec">Позвоните нам: <span>8(952)586-10-04</span></div>
+                </div>
         </section>
+        <section id="eight" class="eight">
+            <div class="container">
+                <div class="map">
+                    <div class="mapa" id="mapa"></div>
+                    <div class="contacts">
+                        <h3>Контакты</h3>
+                        <div class="call">
+                            <a href="">
+                                <img src="img/phone-cont.png" alt="">
+                                <img src="img/viber.png" alt="">
+                                <img src="img/whatsapp.png" alt="">
+                                 <span>8(952)586-10-04</span>
+                            </a>
+                        </div>
+                        <div class="insta"><a href="/"><img src="img/instagram.png" alt=""><span>KUKHNISUMOM</span></a></div>
+                        <address>
+                            г.Ростов-на-Дону, ул.Ульяновская д.25
+                        </address>
+                    </div>
+                    <div class="back-form">
+                        <h3>Отправить сообщение</h3>
+                        <form>
+                            <fieldset>
+                                <div class="oplet">
+                                    <input type="text" placeholder="Имя">
+                                    <input type="text" placeholder="Телефон">
+                                </div>
+                                <textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea>
+                                <div class="btn cont"><button>Отправить</button></div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+            <div class="flex-wrap end-block">
+                <div class="logo"><a href="/">Кухни с умом</a></div>
+                <nav>
+                    <ul>
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">Заказать</a></li>
+                        <li><a href="">Акции</a></li>
+                        <li><a href="">Почему мы</a></li>
+                        <li><a href="">Отзывы</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="phone"><a href="tel:8(952)586-10-04"><img src="img/phone-call-w.png" alt=""> 8(952)586-10-04</a></div>
+            </div>
+            <div class="offer">
+                <p>Расчет и цены, представленные на сайте не являются публичной афертой и представлены в ознакомительных целях. Итоговая стоимость зависит от количества километров в пути, объема груза и времени, затраченного на грузоперевозку. Подробности по телефону 8(952)586-10-04</p>
+            </div>
+            <div class="copyright">
+                <p>Все права защищены. Сайт подготовлен <a target="_blank" href="http://ewal-web.ru">ewal-web.ru</a></p>
+                <p>Copyright © 2018</p>
+            </div>
+        </div>
+    </footer>
     </main>
     
     
@@ -358,12 +436,10 @@
     
     
     
-    
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-          crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMwTXnxea3CMi0u8ZIXQqDqe0HAh5t3Rk"></script>
 	<script src="slick/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src=""></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>

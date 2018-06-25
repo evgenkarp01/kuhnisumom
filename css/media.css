@@ -25,6 +25,112 @@
     width: 22px;
     height: 22px;
   }
+
+  main section.one .nav-next {
+    right: 0;
+  }
+
+  main section.one .nav-prev {
+    left: 0;
+  }
+
+  main section.one .utp {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  main section.five .advantage .advant-items .item {
+    padding: 0 7px;
+  }
+
+  footer nav ul li {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  main section.one .navig {
+    top: auto;
+    bottom: 83px;
+  }
+
+  main section.two .furniture .item-kitchen {
+    max-width: 632px;
+  }
+
+  main section.two .furniture .item-txt {
+    padding: 20px 18px;
+  }
+
+  main section.two .furniture .item-txt .kitchen-btn {
+    margin-top: 20px;
+  }
+
+  main section.two .furniture .item {
+    min-height: 430px;
+  }
+
+  main section.two .furniture {
+    min-height: 430px;
+  }
+
+  main section.two .furniture-pagination .item-pag {
+    padding: 0 5px;
+  }
+
+  main section.four .stock .stock-card .stock-cadr-6 .spec p {
+    display: inline;
+  }
+
+  main section.four .stock .stock-card {
+    padding: 55px 25px;
+    align-items: end;
+  }
+
+  main section.four .stock .stock-card .stock-cadr-6 .img {
+    padding: 0 10px;
+  }
+
+  main section.five .advantage .advant-items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  main section.five .advantage .advant-items .item {
+    margin-bottom: 40px;
+  }
+
+  main section.six .review-items .review-slider .auhtor {
+    right: 0;
+  }
+
+  main section.six .review-items .review-slider .auhtor .auth-sldr .item img {
+    min-width: auto;
+  }
+
+  main section.six .review-items .review-slider .auhtor .auth-sldr .item {
+    float: right;
+  }
+
+  main section.six .review-items .review-slider .slide-card .sldr .video {
+    margin-left: 0;
+  }
+
+  main section.six .review-items .review-slider .slide-card .sldr .name {
+    padding-left: 0;
+  }
+
+  main section.six .review-items .review-slider .auhtor {
+    z-index: -1;
+  }
+
+  main section.eight .map .contacts {
+    min-height: 210px;
+    top: 25px;
+  }
+
+  main section.eight .map .back-form {
+    bottom: 23px;
+  }
 }
 @media only screen and (max-width: 992px) {
   main section.one header nav.desctop-menu {
@@ -34,15 +140,196 @@
   .navBurger {
     display: block;
   }
+
+  main section.one .utp .main-ttl h1 br {
+    display: none;
+  }
+
+  main section.two .furniture .item-kitchen {
+    float: none;
+    max-width: 100%;
+  }
+
+  main section.three .sostav-btn {
+    margin-top: 30px;
+  }
+
+  main section.four .stock .stock-card {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main section.four .stock .stock-card .stock-cadr-6 .img {
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  main section.six .review-items .review-slider .auhtor {
+    display: none;
+  }
+
+  main section.six .review-items .review-slider .slide-card .sldr .video {
+    margin-right: 0;
+  }
+
+  main section.six .review-items .review-slider .slide-card {
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  main section.seven .workers .work .wrks {
+    align-items: start;
+  }
+
+  main section.seven .workers .work-col-6 {
+    position: relative;
+    min-height: 550px;
+  }
+
+  main section.seven .workers .work-col-6 .img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  main section.eight .map .contacts {
+    width: auto;
+    right: 30px;
+    max-width: 100%;
+  }
+
+  main section.eight .map .back-form {
+    max-width: 100%;
+    width: auto;
+    left: 30px;
+  }
+
+  footer nav {
+    display: none;
+  }
+
+  footer .logo a, footer .phone a {
+    font-size: 20px;
+  }
+
+  .end-block {
+    align-items: baseline;
+  }
 }
 @media only screen and (max-width: 768px) {
   .overlayMenu {
     right: 15vw;
     top: 24vw;
   }
+
+  main section.one .utp .main-ttl h1 {
+    font-size: 41px;
+    line-height: 45px;
+  }
+
+  main section.four .stock .stock-card {
+    text-align: center;
+  }
+
+  main section.six .review-items .review-slider {
+    min-height: auto;
+  }
+
+  main section.six .review-items .slick-list {
+    padding: 0 !important;
+  }
+
+  main section.six .review-items .review-preview .slick-track {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main section.seven .workers .work .wrks {
+    flex-direction: column;
+  }
+
+  main section.seven .workers .work-col-6 .img {
+    position: relative;
+  }
+
+  main section.seven .spec-workers {
+    bottom: -100px;
+  }
+
+  main section.seven .spec-workers .title-spec {
+    margin-top: 16px;
+  }
 }
 @media only screen and (max-width: 480px) {
   main section.one header .phone {
     display: none;
+  }
+
+  main section.one .utp .main-ttl h1 {
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.16px;
+  }
+
+  main section.one .utp .main-desc p {
+    font-weight: 600;
+    letter-spacing: 0.48px;
+    line-height: 28px;
+    font-size: 21px;
+  }
+
+  main section.five .advantage .advant-items .item {
+    padding: 0;
+  }
+
+  main section.eight {
+    margin-top: 200px;
+  }
+
+  main section.seven .spec-workers {
+    bottom: -224px;
+  }
+
+  main section.seven .spec-workers .title-spec {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  main section.seven .spec-workers .phone-spec {
+    margin-top: 16px;
+    font-family: "DIN Pro Condensed";
+  }
+
+  main section.seven .spec-workers .phone-spec span {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  main section.eight .map .back-form form fieldset .oplet {
+    flex-direction: column;
+  }
+
+  main section.eight .map .back-form form fieldset input:last-child, main section.eight .map .back-form form fieldset input:first-child {
+    margin: 0;
+  }
+
+  main section.eight .map .back-form form fieldset input:first-child {
+    margin-bottom: 15px;
+  }
+
+  main section.eight .map .contacts, main section.eight .map .back-form {
+    right: 0;
+    left: 0;
+  }
+
+  main section.eight .map .mapa {
+    min-height: 650px;
   }
 }

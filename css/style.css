@@ -417,6 +417,7 @@ main section.one .nav-next {
   right: 100px;
 }
 main section.two .context-ttl {
+  padding: 0 10px;
   position: relative;
   margin-top: -8.5%;
   z-index: 6;
@@ -428,6 +429,7 @@ main section.two .context-ttl {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 main section.two .context-ttl .dsc {
   font-family: "Proxima Nova";
@@ -521,6 +523,7 @@ main section.two .furniture-pagination .item-pag img {
   max-width: 170px;
   max-height: 130px;
   height: auto;
+  width: 100%;
 }
 main section.three {
   margin-top: 80px;
@@ -943,7 +946,8 @@ main section.eight .map .contacts {
   max-width: 507px;
   min-height: 230px;
   width: 100%;
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   background-color: rgba(173, 152, 0, 0.4);
   position: absolute;
   top: 30px;
@@ -992,7 +996,8 @@ main section.eight .map .back-form {
   position: absolute;
   right: 30px;
   bottom: 30px;
-  border-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   background-color: rgba(173, 152, 0, 0.4);
   text-align: center;
   padding-top: 25px;
@@ -1035,6 +1040,7 @@ main section.eight .map .back-form form fieldset .cont {
 }
 
 footer {
+  margin-top: 100px;
   position: relative;
   color: #FFF;
   min-height: 180px;

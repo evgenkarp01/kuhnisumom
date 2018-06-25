@@ -42,10 +42,39 @@ $('.furniture').slick({
   });
   $('.furniture-pagination').slick({
     slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     asNavFor: '.furniture',
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 350,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
   });
     
     

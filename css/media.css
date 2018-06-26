@@ -332,4 +332,8 @@
   main section.eight .map .mapa {
     min-height: 650px;
   }
+
+  .modal-form ol {
+    padding: 10px 5px;
+  }
 }

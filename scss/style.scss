@@ -1146,7 +1146,7 @@ footer{
 
 .overlay {
     position: fixed;
-    background: #8D8244;
+    background: rgba(173, 152, 0, 0.95);
     top: 0;
     right: 0;
     width: 100%;
@@ -1212,7 +1212,8 @@ footer{
                 border: 1px solid rgba(255, 255, 255, 0.09);
                 color: #fff;
                 text-decoration: none;
-                font-size: 30px;
+                font-size: 25px !important;
+                font-weight: 600 !important;
                 padding: 10px 40px 10px 40px;
                 margin: 5px 0;
                 transition: 0.2s;
@@ -1253,6 +1254,89 @@ main section.one header nav ul[role="menu"]{
 
 
 
+
+
+.mfp-bg {
+  background: rgba(173, 152, 0, 0.95) !important;
+  opacity: 1;
+}
+
+.modal-form {
+  padding: 0 15px;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  min-height: 350px;
+  text-align: center;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 3s ease-out;
+  box-shadow: 0px 4px 9px 0px rgba(50, 50, 50, 0.21);
+}
+
+.modal-form h3 {
+  font-family: "Proxima Nova";
+  font-size: 28px;
+  font-weight: normal;
+  padding-top: 35px;
+}
+
+.modal-form ol {
+  list-style-type: none;
+  padding: 10px 40px;
+}
+
+.modal-form ol li {
+  margin: 30px 0;
+}
+
+.modal-form ol li input {
+  background: none;
+  border: none;
+  border: 1px solid #000;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 15px;
+}
+
+.modal-form .btn-form {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+}
+
+
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+
+.persd-sogl{
+    font-size: 12px;
+    margin-top: 10px;
+    a{
+        color: #2ACB72;
+    }
+}
 
 
 

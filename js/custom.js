@@ -1,11 +1,68 @@
 $( document ).ready(function() {
     
+    /*
+    $(function(){
+        $('[name="phone_cont"]').mask("+7(999) 999-99-99");
+        $('[name="phone-send-calc"]').mask("+7(999) 999-99-99");
+        $('[name="phone_modal"]').mask("+7(999) 999-99-99");
+    });
+    */
     
+    $("a.ancLinks").click(function () { 
+			var elementClick = $(this).attr("href");
+			var destination = $(elementClick).offset().top;
+			$('html,body').animate( { scrollTop: destination }, 400 );
+			return false;
+		});
     
-    
-    
-    
-    
+
+
+    var lastId,
+	  topMenu = $("#top-menu"),
+	  topMenuHeight = topMenu.outerHeight() + 15,
+	  // All list items
+	  menuItems = topMenu.find("a"),
+	  // Anchors corresponding to menu items
+	  scrollItems = menuItems.map(function() {
+	    var item = $($(this).attr("href"));
+	    if (item.length) {
+	      return item;
+	    }
+	  });
+
+	  $(window).scroll(function() {
+		  // Get container scroll position
+		  var fromTop = $(this).scrollTop() + topMenuHeight+50;
+		  // Get id of current scroll item
+		  var cur = scrollItems.map(function() {
+		    if ($(this).offset().top < fromTop)
+		      return this;
+		  });
+		  // Get the id of the current element
+		  cur = cur[cur.length - 1];
+		  var id = cur && cur.length ? cur[0].id : "";
+
+		  if (lastId !== id) {
+		    lastId = id;
+		    // Set/remove active class
+		    menuItems
+		      .parent().removeClass("active")
+		      .end().filter("[href='#" + id + "']").parent().addClass("active");
+		  }
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    
     $('.slider-bg').slick({
         dots: true,
@@ -46,6 +103,8 @@ $('.furniture').slick({
     asNavFor: '.furniture',
     centerMode: true,
     focusOnSelect: true,
+    nextArrow: false,
+    nextArrow: false,
     responsive: [
             {
                 breakpoint: 993,
@@ -78,12 +137,37 @@ $('.furniture').slick({
   });
     
     
+
+
+
+
+
+
+
+
+    
+    $('.popup-with-form').magnificPopup({
+      type: 'inline',
+      preloader: false,
+      focus: '#name',
+      callbacks: {
+        beforeOpen: function() {
+          if($(window).width() < 700) {
+            this.st.focus = false;
+          } else {
+            this.st.focus = '#name';
+          }
+        }
+      }
+    });
     
     
     
-    
-    
-    
+    $('.overlayMenu ul li a').on('click', function(){
+      $('.overlay').removeClass('open');
+      $("body").toggleClass("locked");
+      $("#navToggle").toggleClass("active");
+    });
     
     
     

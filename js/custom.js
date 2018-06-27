@@ -75,7 +75,7 @@ $( document ).ready(function() {
 
 	  $(window).scroll(function() {
 		  // Get container scroll position
-		  var fromTop = $(this).scrollTop() + topMenuHeight+50;
+		  var fromTop = $(this).scrollTop() + topMenuHeight+200;
 		  // Get id of current scroll item
 		  var cur = scrollItems.map(function() {
 		    if ($(this).offset().top < fromTop)

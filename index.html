@@ -17,9 +17,9 @@
         <section id="start" class="one">
             <div class="navig nav-prev nav-prev-bg"><img src="img/prev.png" alt=""></div>
            <div class="slider-bg">
-                <div class="slide-bg"></div>
-                <div class="slide-bg"></div>
-                <div class="slide-bg"></div>
+                <div class="slide-bg bg-1"></div>
+                <div class="slide-bg bg-2"></div>
+                <div class="slide-bg bg-3"></div>
             </div>
             <div class="navig nav-next nav-next-bg"><img src="img/next.png" alt=""></div>
             <div class="container">
@@ -244,9 +244,9 @@
                     <div class="review-items">
                         <div class="review-preview">
                             <div class="oplet"><div class="preview active"><img src="img/face.png" alt=""></div></div>
-                            <div class="oplet"><div class="preview"><img src="img/face.png" alt=""></div></div>
-                            <div class="oplet"><div class="preview"><img src="img/face.png" alt=""></div></div>
-                            <div class="oplet"><div class="preview"><img src="img/face.png" alt=""></div></div>
+                            <div class="oplet"><div class="preview"><img src="img/face-2.png" alt=""></div></div>
+                            <div class="oplet"><div class="preview"><img src="img/face-3.png" alt=""></div></div>
+                            <div class="oplet"><div class="preview"><img src="img/face-4.png" alt=""></div></div>
                         </div>
                         <div class="review-slider">
                             <div class="slide-card">
@@ -284,7 +284,9 @@
                             <div class="auhtor">
                                 <div class="auth-sldr">
                                     <div class="oplet"><div class="item"><img src="img/review.png" alt=""></div></div>
-                                    <div class="oplet"><div class="item"><img src="img/review.png" alt=""></div></div>
+                                    <div class="oplet"><div class="item"><img src="img/review-2.png" alt=""></div></div>
+                                    <div class="oplet"><div class="item"><img src="img/review-3.png" alt=""></div></div>
+                                    <div class="oplet"><div class="item"><img src="img/review-4.png" alt=""></div></div>
                                 </div>
                             </div>
                         </div>
@@ -365,14 +367,15 @@
                     </div>
                     <div class="back-form">
                         <h3>Отправить сообщение</h3>
-                        <form>
+                        <form action="javascript:void(null);">
                             <fieldset>
                                 <div class="oplet">
-                                    <input type="text" placeholder="Имя">
-                                    <input type="text" placeholder="Телефон">
+                                    <input type="text" name="name_cont" placeholder="Имя" required="">
+                                    <input type="text" name="phone_cont" placeholder="Телефон" required="">
                                 </div>
-                                <textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea>
-                                <div class="btn cont"><button>Отправить</button></div>
+                                <textarea name="phone_message" placeholder="Сообщение" id="" cols="30" rows="10"></textarea>
+                                <div class="btn cont result"><button id="btn_cont">Отправить</button></div>
+                                <p class="persd-sogl black-pd">Нажимая кнопку "Отправить" вы соглашаетесь с <a class="soglasie" target="_blank" href="soglasie.html">Пользовательским соглашением</a>  и <a href="persdata.html" target="_blank">Положением о Персональных данных</a></p>
                             </fieldset>
                         </form>
                     </div>
@@ -408,28 +411,6 @@
     </main>
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <form id="test-form" class="white-popup-block mfp-hide modal-form" action="javascript:void(null);">
         <h3>Заполните форму</h3>
         <fieldset style="border:0;">
@@ -454,6 +435,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMwTXnxea3CMi0u8ZIXQqDqe0HAh5t3Rk"></script>
 	<script src="slick/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>

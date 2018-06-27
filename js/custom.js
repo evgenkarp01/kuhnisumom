@@ -1,12 +1,55 @@
 $( document ).ready(function() {
     
-    /*
+    
     $(function(){
         $('[name="phone_cont"]').mask("+7(999) 999-99-99");
-        $('[name="phone-send-calc"]').mask("+7(999) 999-99-99");
         $('[name="phone_modal"]').mask("+7(999) 999-99-99");
     });
-    */
+
+
+
+
+
+
+
+
+    function call(ev) {
+ 	  var msg   = $(ev).closest('form').serialize();
+        $.ajax({
+          type: 'POST',
+          url: '../php/send.php',
+          data: msg,
+          success: function(data) {
+            $(ev).closest('.result').html(data);
+            $(ev).slideUp('fast');
+          },
+          error:  function(xhr, str){
+	    alert('Возникла ошибка: ' + xhr.responseCode);
+          }
+        });
+    }
+
+    
+    $('#btn_modal').on('click', function(){
+        if(($('[name="name_modal"]').val()!='')&&($('[name="phone_modal"]').val()!='')&&($('[name="phone_modal"]').val()!='+7(___)___-__-__')){
+             call(this);
+           }
+    });
+    $('#btn_cont').on('click', function(){
+        if(($('[name="name_cont"]').val()!='')&&($('[name="phone_cont"]').val()!='')&&($('[name="phone_cont"]').val()!='+7(___)___-__-__')){
+             call(this);
+           }
+    });
+
+
+
+
+
+
+
+
+
+    
     
     $("a.ancLinks").click(function () { 
 			var elementClick = $(this).attr("href");

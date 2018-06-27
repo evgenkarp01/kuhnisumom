@@ -277,7 +277,15 @@ main section.one .slider-bg {
 main section.one .slider-bg .slide-bg {
   width: 100%;
   min-height: 1120px;
-  background: url(../img/slide.png) no-repeat;
+}
+main section.one .slider-bg .bg-1 {
+  background: url(../img/slide-1.jpg) no-repeat;
+}
+main section.one .slider-bg .bg-2 {
+  background: url(../img/slide-2.jpg) no-repeat;
+}
+main section.one .slider-bg .bg-3 {
+  background: url(../img/slide-3.jpg) no-repeat;
 }
 main section.one .slider-bg:after {
   content: "";
@@ -744,12 +752,14 @@ main section.six .review-items .review-slider .auhtor {
   right: 50px;
 }
 main section.six .review-items .review-slider .auhtor .auth-sldr {
-  max-width: 320px;
+  max-width: 400px;
   width: 100%;
+  min-width: 100%;
 }
 main section.six .review-items .review-slider .auhtor .auth-sldr .item img {
-  min-width: 100%;
+  width: auto;
   height: auto;
+  max-height: 642px;
 }
 main section.six .review-items .video__active {
   width: 100%;

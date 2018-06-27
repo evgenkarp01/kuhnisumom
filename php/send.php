@@ -9,8 +9,8 @@ use PHPMailer\PHPMailer\Exception;
 
 $mail = new PHPMailer;
 	$sendto   = "evgenkarp01@ya.ru";
-	$usermail = "noreply@vesem-s-umom.ru";
-    $mail->setFrom($usermail, 'Обработчик почты VESEM-S-UMOM');
+	$usermail = "noreply@kuhni-s-umom.ru";
+    $mail->setFrom($usermail, 'Обработчик почты KUHNI-S-UMOM');
     $mail->addAddress($sendto,'Грузоперевозки');
     $mail->addReplyTo($sendto,'Грузоперевозки');
 
@@ -68,7 +68,7 @@ $mail = new PHPMailer;
 		
 
 
-		$subject  = "Новое сообщение - с сайта ROSTOVBAGET.RU - ПИСЬМО->ФОРМА";
+		$subject  = "Новое сообщение - с сайта KUHNI-S-UMOM.RU - ПИСЬМО->ФОРМА";
 
 			
 	$msg  = "<html><body style='font-family:Arial,sans-serif;'>";

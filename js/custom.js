@@ -43,6 +43,10 @@ $( document ).ready(function() {
 
 
 
+    $('.review-preview .preview').on('click', function(){
+        $('.review-preview .preview').removeClass("active");
+        $(this).toggleClass("active");
+    });
 
 
 

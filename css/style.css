@@ -487,7 +487,7 @@ main section.two .furniture .item-txt {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 40px;
+  padding: 45px 40px;
 }
 main section.two .furniture .item-txt h4 {
   color: #000000;
@@ -505,9 +505,12 @@ main section.two .furniture .item-txt .desc {
   letter-spacing: 0.32px;
   line-height: 21px;
 }
+main section.two .furniture .item-txt .desc  ul{
+  padding: 10px 40px;
+}
 main section.two .furniture .item-txt .kitchen-btn {
   max-width: 200px;
-  margin-top: 82px;
+  margin-top: 50px;
 }
 main section.two .furniture .item-txt .kitchen-btn button {
   width: 200px;
@@ -750,6 +753,9 @@ main section.six .review-items .review-slider .auhtor {
   position: absolute;
   bottom: 0;
   right: 50px;
+}
+main section.six .review-items .review-slider .auhtor .slick-slide{
+  transition: opacity .8s  !important;
 }
 main section.six .review-items .review-slider .auhtor .auth-sldr {
   max-width: 400px;
@@ -1389,4 +1395,11 @@ main section.one header nav ul[role="menu"] {
 }
 .persd-sogl a {
   color: #2ACB72;
+}
+.rev-anim{
+    line-height: 1.4em;
+    color: #7b7b7b;
+    margin-top: 40px;
+    background: #fff;
+    padding: 10px;
 }
